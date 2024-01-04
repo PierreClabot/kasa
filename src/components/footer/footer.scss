@@ -1,0 +1,29 @@
+.footer{
+    width: 100vw;
+    position: relative;
+    left: -40px;
+    height: 210px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+    
+    img{
+        width: 120px;
+        margin: 70px auto 40px auto;
+    }
+    .text{
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .footer{
+        font-size: 12px;
+    }
+    .text{
+        max-width: 130px;
+    }
+}

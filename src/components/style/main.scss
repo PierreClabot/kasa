@@ -1,0 +1,30 @@
+@import "./variables/variables.scss";
+@import "./mixins/mixins.scss";
+
+// Components
+@import "./base/normalize.css";
+
+@import "./../header/header";
+@import "./../menu/menu";
+@import "./../banner/banner";
+
+@import "./../footer/footer";
+
+// Pages
+
+@import "./../../pages/errorPage/errorPage.scss";
+
+// Externe
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+body{
+    min-height: 100vh;
+    padding: 40px;
+    overflow-x: hidden;
+}
+
+*{
+    color: $primary-color;
+    font-family: 'Montserrat', sans-serif;
+}

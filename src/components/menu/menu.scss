@@ -1,0 +1,40 @@
+.menu{
+
+    display: flex;
+    align-items: center;
+    ul{
+
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        
+        li{
+            list-style: none;
+            
+            &:not(:first-child){
+                margin-left: 60px;
+            }
+            a{
+                text-decoration: none;
+                color: $primary-color;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .menu{
+        font-size: 12px;
+        text-transform: uppercase;
+        ul{
+            
+            li{  
+                &:not(:first-child){
+                    margin-left: 20px;
+                }
+            }
+        }
+    
+    }
+}
