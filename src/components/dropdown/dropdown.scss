@@ -1,0 +1,44 @@
+.dropdown{
+    background-color: $primary-color;
+    max-width: 1020px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: min-content;
+
+    .btn{
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .vector{
+            transition: transform 0.3s;
+        }
+    }
+    .title{
+        color: #fff;
+    }
+    .content{
+        display: none;
+        opacity: 0;
+        margin-top: 20px;
+        color: #fff;
+    }
+
+    &.active{
+
+        .btn{
+            .vector{
+                transform: rotate(180deg);
+            }
+        }
+        .content{
+            opacity: 1;
+            display: block;
+
+        }
+    }
+}

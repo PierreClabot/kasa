@@ -1,7 +1,8 @@
 .banner{
 
     max-width: 1240px;
-    height: 220px;
+    // height: 220px;
+    height: max(12vw,110px);
     margin: auto;
     display: flex;
     align-items: center;
@@ -9,7 +10,8 @@
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    
+    padding : 0 20px;
+
     .background{
         position: absolute;
         top: 0;
@@ -19,6 +21,7 @@
         object-fit: cover;
         z-index: -2;
     }
+
     &::before{
         content: "";
         position: absolute;
@@ -27,11 +30,32 @@
         width: 100%;
         height: 100%;
         z-index: -1;
-        background-color: #312e2e28;
+        background-color: #312e2e4b;
     }
 
     .text{
-        font-size: 3vw;
+        font-size: max(3vw,30px);
         color: #fff;
+        br{
+            display: none;
+        }
     }
+    
+
+}
+
+
+@media screen and (max-width:576px) {
+
+    .banner{
+        height: 110px;
+        justify-content: flex-start;
+        .text{
+            font-size: 24px;
+            br{
+                display: block;
+            }
+        }
+    }
+    
 }

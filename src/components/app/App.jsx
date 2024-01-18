@@ -3,7 +3,7 @@ import './App.css';
 import Home from '../../pages/home/Home.jsx';
 import About from '../../pages/about/about';
 import ErrorPage from "../../pages/errorPage/errorPage.jsx";
-// import Header from '../header/header.jsx';
+import Location from '../../pages/location/location.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -14,9 +14,13 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: "",
       errorElement: <ErrorPage />,
       children : [
+        {
+          path: '',
+          element : <Home />
+        },
         {
           path: 'index',
           element : <Home />
@@ -24,6 +28,11 @@ function App() {
         {
           path: 'about',
           element : <About />
+        }
+        ,
+        {
+          path: 'location/:id',
+          element : <Location />
         }
       ]
     }

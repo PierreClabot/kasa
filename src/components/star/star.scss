@@ -1,0 +1,8 @@
+.star{
+    &.active{
+        fill : #FF6060;
+    }
+    &.inactive{
+        fill: #E3E3E3;
+    }
+}

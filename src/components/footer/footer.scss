@@ -1,7 +1,9 @@
 .footer{
     width: 100vw;
     position: relative;
+    bottom: 0;
     left: -40px;
+
     height: 210px;
     background-color: #000;
     display: flex;
@@ -22,8 +24,10 @@
 @media screen and (max-width:576px) {
     .footer{
         font-size: 12px;
+        left: -20px;
+        .text{
+            max-width: 130px;
+        }
     }
-    .text{
-        max-width: 130px;
-    }
+
 }

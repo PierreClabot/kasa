@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     max-width: $max-width;
+    width: 100%;
     margin: 0 auto 40px auto;
 
     .logo{
@@ -15,7 +16,6 @@
 
 @media screen and (max-width:576px) {
     .header{
-        padding : 15px;
     
         .logo{
             width: 140px;

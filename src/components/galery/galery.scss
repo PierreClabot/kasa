@@ -1,0 +1,19 @@
+.galery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: $max-width;
+    margin: 50px auto;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    padding: 50px;
+    gap: 60px;
+    position: relative;
+}
+@media screen and (max-width:576px) {
+    .galery{
+        background-color: transparent;
+        gap: 20px;
+        padding: 0;
+    }
+}

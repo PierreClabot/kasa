@@ -1,34 +1,38 @@
 export default class Api{
-    // constructor(){
-    //     // this.url = "./../../data/data.json"
-    // }
+    constructor(){
+        this.url = "/data/data.json"
+    }
 
     async getLocations(){
 
-        await fetch("./data.json")
+        let data = await fetch(this.url)
         .then((response)=>{
-            console.log(response)
+
             if (!response.ok) {
                 throw new Error(`Erreur HTTP: ${response.status}`);
             }
-            response.json()
+            return response.json()
         })
-        .then(data=>console.log(data))
-        .catch(error => console.error('Erreur de conversion JSON :', error));
+        
+        return data;
 
     }
 
-    async getLocation(idLocation){
-        await fetch(this.url)
+    getLocation(idLocation){
+        return fetch(this.url)
             .then((res)=>{
                 return res.json()
             })
             .then((locations)=>{
-                for(const location of locations){
-                    if(location.id === idLocation){
-                        return location
+
+                for(const element of locations){
+                    
+                    if(element.id === idLocation){
+                        return element
                     }
                 }
+
+                return ""
             })
     }
 }

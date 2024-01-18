@@ -4,7 +4,7 @@ import Header from "../../components/header/header";
 import Banner from "../../components/banner/banner";
 import Galery from "../../components/galery/galery";
 
-import background from "../../assets/background.png"
+import background from "../../assets/banner_home.png"
 // import ErrorPage from "../errorPage/errorPage.jsx";
 // import Root from "../../components/routes/root";
 // import {
@@ -18,8 +18,10 @@ function Index(){
     return(
       <div>
         <Header />
-        <Banner text="Chez vous, partout et ailleurs" background={background}/>
-        <Galery />
+        <div className="container">
+          <Banner text="Chez vous,<br> partout et ailleurs" background={background}/>
+          <Galery />
+        </div>
         <Footer />
       </div>  
     );

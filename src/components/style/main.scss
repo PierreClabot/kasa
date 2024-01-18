@@ -8,10 +8,21 @@
 @import "./../menu/menu";
 @import "./../banner/banner";
 
+@import "./../galery/galery";
+@import "./../card/card";
+@import "./../dropdown/dropdown";
+
+@import "./../carousel/carousel";
+@import "./../info/info";
+@import "./../tag/tag";
+@import "./../star/star";
+@import "./../host/host";
+
 @import "./../footer/footer";
 
 // Pages
-
+@import "./../../pages/home/home.scss";
+@import "./../../pages/about/about.scss";
 @import "./../../pages/errorPage/errorPage.scss";
 
 // Externe
@@ -19,12 +30,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
 body{
-    min-height: 100vh;
-    padding: 40px;
+    padding: 40px 40px 0 40px;
     overflow-x: hidden;
+}
+
+@media screen and (max-width:576px) {
+    body{
+        padding: 20px 20px 0px 20px;
+    }
 }
 
 *{
     color: $primary-color;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .container{
+        flex : 1;
+    }
 }

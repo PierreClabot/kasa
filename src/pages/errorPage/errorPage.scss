@@ -1,21 +1,25 @@
-#error-page{
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-    .error{
-        font-size: max(18vw,220px);
-        font-weight: 700;
-    }
-    .info_error{
-        margin-top: 60px;
-        font-size: max(3vw,30px);
-        text-align: center;
-        padding: 0 50px;
-    }
-    .link_error{
-        margin-top: 60px;
+.container{
+    width: 100%;
+    #error-page{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        .error{
+            font-size: max(18vw,220px);
+            font-weight: 700;
+        }
+        .info_error{
+            margin-top: 60px;
+            font-size: max(3vw,30px);
+            text-align: center;
+            padding: 0 50px;
+        }
+        .link_error{
+            margin-top: 60px;
+        }
     }
 }
 
