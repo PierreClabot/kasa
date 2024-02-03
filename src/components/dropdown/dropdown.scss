@@ -20,12 +20,16 @@
     }
     .title{
         color: #fff;
+        font-size: 18px;
     }
     .content{
         display: none;
         opacity: 0;
         margin-top: 20px;
         color: #fff;
+        div{
+            color: #fff;
+        }
     }
 
     &.active{

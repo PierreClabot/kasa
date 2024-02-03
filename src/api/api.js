@@ -31,8 +31,7 @@ export default class Api{
                         return element
                     }
                 }
-
-                return ""
+                throw new Error("Logement not found")
             })
     }
 }

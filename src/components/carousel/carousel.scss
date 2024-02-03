@@ -4,6 +4,10 @@
     max-width: 1240px;
     height: 415px;
     margin: auto;
+    &.skeleton{
+        background-color: $background-skeleton;
+    }
+
     .background{
         position: absolute;
         width: 100%;
@@ -27,10 +31,21 @@
 
     .index{
         position: absolute;
-        bottom: 10px;
+        bottom: 30px;
         left: 50%;
-        transform: translateY(-50%);
+        transform: translateX(-50%);
         color: #fff;
         font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .carousel{
+        height: 255px;
+    }
+    .index{
+        display: none;
     }
 }

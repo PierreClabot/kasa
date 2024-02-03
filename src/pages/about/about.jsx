@@ -16,7 +16,7 @@ function About(){
     
     
     return(
-      <div>
+      <>
           <Header />
           <div className="container">
             <Banner text="" background={background}/>
@@ -28,7 +28,7 @@ function About(){
             </div>
           </div>
           <Footer />
-      </div>
+      </>
 
     );
 }

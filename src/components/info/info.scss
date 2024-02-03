@@ -9,7 +9,7 @@
         justify-content: space-between;
 
         .title{
-            width: 50%;
+            width: 70%;
 
             .location{
                 font-size: 36px;
@@ -17,41 +17,85 @@
 
             .localisation{
                 font-size: 18px;
+                margin-top: 10px;
+            }
+
+            .tags{
+                margin-top: 20px;
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
             }
         }
 
-        .host{
-            display: flex;
-            align-items: center;
-            .name{
-                font-size: 18px;
-            }
-            img{
-                width: 64px;
-                height: 64px;
-                border-radius: 50px;
-            }
-        }
+
     }
     .details{
         display: flex;
         justify-content: space-between;
-        margin-top: 20px;
-        .tags{
-            display: flex;
-            gap: 10px;
+        flex-direction: column;
+        .rate{
+            min-width: 150px;
         }
     }
     .dropdowns{
         display: flex;
         justify-content: space-between;
         margin: 25px 0 50px 0;
+        gap: 20px;
         .dropdown{
-            width: 580px;
+            max-width: 580px;
             margin: 0;
         }
     }
 
 
 
+}
+
+.skeleton{
+    background-color: $background-skeleton;
+    min-height: 50px;
+}
+
+@media screen and (max-width:768px) {
+    .info{
+        .header_info{
+            flex-direction: column;
+            .title{
+                width: 100%;
+
+
+            }
+            .details{
+                margin-top: 15px;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+        }
+
+        .dropdowns{
+            flex-direction: column;
+        
+            .dropdown{
+                max-width: none;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .info{
+
+        .header_info{
+
+            .title{
+                .location{
+                    font-size: 24px;
+                }
+
+            }
+        }
+    }
 }

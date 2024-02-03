@@ -18,27 +18,28 @@
             padding: 0 50px;
         }
         .link_error{
-            margin-top: 60px;
+            margin: 100px 0;
         }
     }
 }
 
 @media screen and (max-width:576px) {
-
-    #error-page{
-        .error{
-            margin-top: 110px;
-            font-size: 96px;
-        }
-    
-        .info_error{
-            font-size: 18px;
-            margin-top: 110px;
-        }
-    
-        .link_error{
-            font-size: 14px;
-            margin-top: 110px;
+    .container{
+        #error-page{
+            .error{
+                margin-top: 110px;
+                font-size: max(96px,25vw);
+            }
+        
+            .info_error{
+                font-size: 18px;
+                margin-top: 110px;
+            }
+        
+            .link_error{
+                font-size: 14px;
+            }
         }
     }
+
 }

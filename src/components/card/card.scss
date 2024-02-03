@@ -1,6 +1,9 @@
 .link{
     text-decoration: none;
     .card{
+        &.skeleton{
+            background-color: $background-skeleton;
+        }
         width: 340px;
         max-width: 340px;
         height: 340px;
