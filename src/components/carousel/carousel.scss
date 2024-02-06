@@ -4,6 +4,8 @@
     max-width: 1240px;
     height: 415px;
     margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
     &.skeleton{
         background-color: $background-skeleton;
     }
