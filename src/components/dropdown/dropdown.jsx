@@ -20,8 +20,7 @@ function Dropdown(props){ // Revoir le contenu array ou string
 
         target.classList.add("active");
     }
-    console.log(props.isList)
-    // @TODO Bug Dropdown list
+
     return( <div className="dropdown">
                 <div className="btn" onClick={handleClick}>
                     <div className="title">{props.title}</div>
@@ -32,15 +31,15 @@ function Dropdown(props){ // Revoir le contenu array ou string
                 {
                     
                         props.isList?(
-                            props.content.map(elem=>(
-                                <div className="item">{elem}</div>
+                            props.content.map((elem,index)=>(
+                                <div className="item" key={index}>{elem}</div>
                             )))
-                            :(<div>{props.content}</div>)
+                            :(<p>{props.content}</p>)
 
                 }
                 </div>   
             </div>)
 }
 
-// dangerouslySetInnerHTML={{ __html: content }}
+
 export default Dropdown

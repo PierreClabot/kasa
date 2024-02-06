@@ -40,7 +40,7 @@ function Location(){
     if(error === "erreur"){
         return <ErrorPage />
     }
-    console.log("data.equipments",data.equipments)
+    
 
     if(load){
         return(

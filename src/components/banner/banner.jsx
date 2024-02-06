@@ -6,7 +6,6 @@ function Banner(props){
             <img className="background" src={props.background} alt="Paysage" />
             {
                 props.text?(<span className="text" dangerouslySetInnerHTML={{ __html: props.text }}></span>):""
-                // props.text && <span className="text" dangerouslySetInnerHTML={{ __html: props.text }}></span>
             }
             
         </div>
