@@ -14,12 +14,8 @@ function Info(props){
             
         )
       ) : null;
-    // let textEquipments = "";
 
-
-    // props.equipments.map((item) => 
-    //     textEquipments += item +"<br>"  
-    // )
+        
     if(props.isLoad){
         return(
             <div className="info">
@@ -60,7 +56,8 @@ function Info(props){
                     </div>
                     <div className="details">
                         <div className="host skeleton">
-                            
+                            <div className="fullName skeleton"></div>
+                            <div className="lastName"></div>
                         </div>
                         <div className="rate skeleton">
                             
@@ -74,31 +71,6 @@ function Info(props){
             </div>
         )
     }
-    // return(
-    //     <div className="info">
-    //         <div className="header_info">
-    //             <div className="title">
-    //                 <div className="location">{props.title}</div>
-    //                 <div className="localisation">{props.localisation}</div>
-    //                 <div className="tags">
-    //                     {tags}
-    //                 </div>
-    //             </div>
-    //             <div className="details">
-    //                 <div className="host">
-    //                     <Host hostPicture={props.hostPicture} hostName={props.hostName} />
-    //                 </div>
-    //                 <div className="rate">
-    //                     <Rate rate={props.rate} />
-    //                 </div>
-    //             </div>
-    //         </div>
-    //         <div className="dropdowns">
-    //             <Dropdown title="Description" content={props.description} isList={false} />
-    //             <Dropdown title="Équipements" content={props.equipments} isList={true} />
-    //         </div>
-    //     </div>
-    // )
 }
 
 export default Info

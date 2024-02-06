@@ -20,6 +20,7 @@ function Dropdown(props){ // Revoir le contenu array ou string
 
         target.classList.add("active");
     }
+    console.log(props.isList)
     // @TODO Bug Dropdown list
     return( <div className="dropdown">
                 <div className="btn" onClick={handleClick}>
@@ -31,7 +32,7 @@ function Dropdown(props){ // Revoir le contenu array ou string
                 {
                     
                         props.isList?(
-                            props.content.forEach(elem=>(
+                            props.content.map(elem=>(
                                 <div className="item">{elem}</div>
                             )))
                             :(<div>{props.content}</div>)
