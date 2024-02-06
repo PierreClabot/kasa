@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './components/app/App';
-//import Index from './pages/index/Index';
 import reportWebVitals from './reportWebVitals';
 import { Outlet } from 'react-router-dom';
 import "./components/style/main.scss";
